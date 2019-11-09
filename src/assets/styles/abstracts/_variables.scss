@@ -1,0 +1,64 @@
+// Background Colors
+$kc-color-success: #2ca02c;
+$kc-color-error-dark: #d62728;
+$kc-color-error: #f00;
+$kc-color-primary-darker: #2a5775;
+$kc-color-gray: #5f6062;
+$kc-color-gray-lightest: #e6e6e6;
+$kc-color-white: #fff;
+
+// margin / padding
+$kc-margin-small: 1rem;
+$kc-margin-medium: 2rem;
+$kc-margin-large: 3rem;
+
+//Fonts / Typography
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;
+// Style anchor elements.
+$link-decoration: underline;
+// Grid breakpoints
+
+// Fonts
+$font-size-base: 1rem; // `16px`
+$font-size-xxxl: ($font-size-base * 2.875); // '30px'
+$font-size-xxl: ($font-size-base * 1.625); // '26px'
+$font-size-xl: ($font-size-base * 1.375); // '22px'
+$font-size-lg: ($font-size-base * 1.125); // '18px'
+$font-size-sm: ($font-size-base * 0.875); // '14px'
+$font-size-xs: ($font-size-base * 0.75); // '12px'
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.17;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: $font-size-base * 0.83;
+$h6-font-size: $font-size-base * 0.67;
+
+// Buttons
+$input-btn-padding-y: 0.725rem;
+$input-btn-padding-x: 0.75rem;
+$kc-font-family-base: Arial, Helvetica, sans-serif;
+
+$kc-heading-title-size: 3rem;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+// Grid columns
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;

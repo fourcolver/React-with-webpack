@@ -1,0 +1,201 @@
+.wrapper {
+  width: 210px;
+  float: right;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.filter-wrapper {
+  position: absolute;
+  top: 95px;
+  right: -100%;
+  width: auto;
+  z-index: 9100;
+  transition: right 400ms ease-in-out;
+  padding-right: 8px;
+}
+
+.scroll-in-right {
+  right: 0;
+}
+
+.scroll-in-left {
+  left: 0;
+}
+
+.filter-details-wrapper {
+  position: absolute;
+  width: 400px;
+  right: calc(100% + 15px);
+  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgb(42, 87, 117);
+  border-radius: 8px;
+  /* display: none; */
+  top: 69px;
+}
+
+.filter-details-wrapper header {
+  text-align: center;
+  color: #444;
+
+  padding: 8px;
+  border-radius: 7px 7px 0 0;
+  background-image: linear-gradient(#285378, #3a7ab3);
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.filter-option-search-wrapper,
+.filter-option-search-wrapper input[type='search'],
+.filter-option-buttons-wrapper {
+  width: 100%;
+  float: left;
+}
+
+.filter-option-search-wrapper input[type='search'] {
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(42, 87, 117);
+}
+
+.filter-details-wrapper ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.filter-option-buttons-wrapper .button {
+  width: 50%;
+  float: left;
+  border: none;
+  background-image: linear-gradient(#285378, #3a7ab3);
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-option-buttons-wrapper .button:first-child {
+  border-radius: 0 0 0 7px;
+  border-right: 1px solid #3a7ab3;
+}
+.filter-option-buttons-wrapper .button:last-child {
+  border-radius: 0 0 7px 0;
+  border-left: 1px solid #3a7ab3;
+}
+
+.active-arrow {
+  position: absolute;
+  right: calc(100% + 3px);
+  top: 5px;
+  display: none;
+}
+
+.filter-details-wrapper ul li {
+  float: left;
+  width: 50%;
+  padding: 6px 10px;
+}
+
+.filter-details-wrapper ul li:hover {
+  box-shadow: 0 1px 3px #a2a2a2;
+}
+
+.filter-details-wrapper ul li input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.filter-block {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 7px;
+  padding: 0 0 5px;
+  background: #fff;
+  border: 1px solid rgb(42, 87, 117);
+  border-radius: 6px;
+  position: relative;
+}
+
+.filter-block:last-child {
+  margin-bottom: 0;
+}
+
+.filter-block h3 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  background-image: linear-gradient(#285378, #3a7ab3);
+  color: #fff;
+  font-size: 11px;
+  margin-top: 0;
+}
+
+.filter-block .startDate,
+.filter-block .endDate {
+  width: 50%;
+  float: left;
+  padding: 5px 8px;
+  background-size: 20px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filter-block .drop-box {
+  padding: 2px 20px 2px 8px;
+  font-size: 12px;
+  position: relative;
+}
+
+.filter-block .drop-box .down-arrow {
+  position: absolute;
+  right: 4px;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.filter-block-toggle {
+  display: none;
+}
+.filter-selctet-option-wrapper {
+  padding: 15px;
+  min-height: 150px;
+  text-align: center;
+}
+
+.filter-selctet-option-wrapper select {
+  width: 80%;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.filter-date-wrapper {
+  padding: 10px 0;
+  min-height: 290px;
+}
+
+.filter-date-wrapper .half {
+  width: 50%;
+  float: left;
+  padding: 0 8px;
+}
+
+.filter-date-wrapper .half .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.filter-date-wrapper .half .react-datepicker-wrapper input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+}

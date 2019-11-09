@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBox render SelectBox component 1`] = `ShallowWrapper {}`;
+
+exports[`SelectBox render SelectBox component with no selected element 1`] = `ShallowWrapper {}`;

@@ -1,0 +1,43 @@
+.landing-block {
+  width: 20%;
+  float: left;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.landing-block a:hover {
+  text-decoration: none;
+}
+
+.landing-block:nth-child(5n + 1) {
+  clear: left;
+}
+
+.landing-block .inner {
+  width: 100%;
+  padding: 15px 15px;
+  box-shadow: 1px 2px 3px #aaa;
+  border-radius: 5px;
+}
+
+.landing-block .inner:hover {
+  width: 100%;
+  padding: 15px;
+  box-shadow: 3px 5px 6px #aaa;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.landing-block .inner:hover .landing-block-heading {
+  animation: bounce 1s;
+}
+
+.landing-block .landing-block-heading {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.image-responsive {
+  width: 100%;
+}

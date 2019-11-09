@@ -1,0 +1,12 @@
+.col-md-12 {
+  width: 100%;
+  float: left;
+}
+.col-md-8 {
+  width: calc(100% / 3 * 2);
+  float: left;
+}
+.col-md-4 {
+  width: calc(100% / 3);
+  float: left;
+}

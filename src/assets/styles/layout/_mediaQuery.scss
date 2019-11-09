@@ -1,0 +1,101 @@
+@media only screen and (max-width: 1000px) {
+  .visible-in-medium {
+    display: inline !important;
+  }
+  .invisible-in-medium {
+    display: none;
+  }
+  .dashboard-data-type {
+    width: 150px;
+  }
+  .search-container {
+    margin-left: 30px;
+  }
+  .tabs {
+    width: calc(100% - 35px);
+  }
+  .filter-wrapper {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+  }
+  .content-main {
+    width: 100%;
+  }
+  .search-container .search-bar {
+    width: 230px;
+  }
+  .filter-block-toggle {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .visible-in-small {
+    display: inline !important;
+  }
+  .invisible-in-small {
+    display: none;
+  }
+  .pme-logo,
+  .info-doc,
+  .dashboard-heading {
+    width: 50px;
+  }
+  .dashboard-heading {
+    width: calc(100% - 116px);
+  }
+  .search-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 49px;
+    left: 0;
+    margin: 0;
+    padding: 8px;
+  }
+  .search-container .search-bar {
+    width: calc(100% - 30px);
+  }
+  .dashboard-data-type {
+    width: 117px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .left-side-tools,
+  .right-side-tools {
+    width: 100%;
+  }
+  .right-side-tools {
+    margin-top: 10px;
+  }
+  .tabs {
+    overflow: visible;
+    width: 100%;
+  }
+  .tab-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  .tab-list li {
+    border-left: 1px solid #e8e8e8;
+  }
+  .tab-list,
+  .tab-list li,
+  .tab-list li a {
+    width: 100%;
+  }
+  .tab-list li a {
+    background-image: linear-gradient(#e8e8e8, #fff);
+  }
+  .filter-block-toggle {
+    display: none;
+  }
+  .col-1of2 {
+    width: 100%;
+  }
+}

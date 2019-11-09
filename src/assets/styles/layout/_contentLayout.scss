@@ -1,0 +1,172 @@
+.dashboard-heading-wrapper {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.pme-logo,
+.info-doc,
+.dashboard-heading {
+  height: 35px;
+  background: #656565;
+  width: 75px;
+  float: left;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.pme-logo > img {
+  width: 100%;
+  margin-top: 3px;
+  vertical-align: unset !important;
+}
+
+.info-doc > img {
+  max-height: 100%;
+  text-align: center;
+  vertical-align: unset !important;
+}
+.dashboard-heading {
+  width: calc(100% - 166px);
+}
+.info-doc {
+  margin-right: 0;
+}
+
+.tabs {
+  position: absolute;
+  top: 95px;
+  width: auto;
+  z-index: 100;
+  overflow: auto;
+  /* display: none; */
+  left: -100%;
+  transition: left 450ms ease-in-out;
+}
+.tab-list {
+  width: 350px;
+  height: 100%;
+  list-style: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+.tab-list li {
+  float: left;
+  width: 100%;
+}
+
+.tab-list li.active a {
+  background-image: linear-gradient(#285378, #3a7ab3);
+  color: #fff;
+}
+
+.tab-list li a {
+  background-image: linear-gradient(#fff, #e8e8e8);
+  padding: 10px 10px;
+  color: #656565;
+  float: left;
+  font-weight: 500;
+  width: 100%;
+}
+
+.tab-list li a:hover {
+  background-image: linear-gradient(#e8e8e8, #fff);
+  text-decoration: none;
+}
+.tab-list li.active a:hover {
+  background-image: linear-gradient(#285378, #3a7ab3);
+  color: #fff;
+}
+
+.filter-block-toggle {
+  width: 30px;
+  float: right;
+  display: block;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+.filter-block-toggle > i {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.tab-toggle,
+.filter-toggle {
+  width: 50%;
+  float: left;
+  background-image: linear-gradient(#e8e8e8, #fff);
+  padding: 5px 25px;
+  color: #000;
+  float: left;
+  font-weight: 500;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: none;
+}
+
+.tab-toggle {
+  border-left: 1px solid #e0e0e0;
+}
+
+.containers {
+  width: 100%;
+  float: left;
+}
+
+.content {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.content-main {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.col-1of2 {
+  width: 50%;
+  float: left;
+}
+
+.col-1of2:nth-child(2n + 1) {
+  clear: left;
+}
+
+.temp-hack {
+  height: 350px;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.block-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hack2 {
+  font-size: 20px;
+  padding: 0 0 0 8px;
+  margin: 15px 0 5px;
+}
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.width-30 {
+  width: 30%;
+  float: left;
+}
+
+.width-70 {
+  width: 70%;
+  float: left;
+}

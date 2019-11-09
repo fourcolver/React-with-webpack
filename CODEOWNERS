@@ -1,0 +1,18 @@
+# Each line is a file pattern followed by one or more owners.
+# Order is important. The last matching pattern has the most precedence.
+
+# UI Dev team are exclusive codeowners for the client-side code
+# devOps file specifics are the only exceptions
+
+# GP: Each Developers names here separated by comma
+* Each developer bitbucket username separated by comma
+
+# Jenkins
+# Developer
+*Jenkinsfile*      developerUsername
+
+# Configs & Modules
+# Developer, Developer, Developer
+*.gitignore        developerUsername, developerUsername
+.eslintrc.js       developerUsername, developerUsername 
+package.json       developerUsername, developerUsername

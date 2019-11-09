@@ -1,0 +1,155 @@
+{
+  "name": "pme",
+  "version": "1.0.0",
+  "description": "Performance Management Engine Pilot Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config config/webpack.dev.babel.js",
+    "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
+    "lint:fix": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\" --fix",
+    "lint:styles": "stylelint \"src/assets/sass/**/*.scss\" --fix",
+    "build": "webpack --mode production --config config/webpack.prod.babel.js",
+    "build:clean": "rimraf ./build:",
+    "analyze": "webpack-bundle-analyzer dist/*.js",
+    "test": "jest",
+    "test-update-snapshots": "jest --updateSnapshot",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/test/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src/app"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css)$": "identity-obj-proxy"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,jsx}": [
+        "npm run prettier",
+        "git add"
+      ]
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "crossfilter2": "^1.4.7",
+    "d3": "^5.12.0",
+    "fbjs": "^1.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "leaflet": "^1.5.1",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-polylinedecorator": "^1.6.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "pouchdb": "^7.1.1",
+    "prop-types": "^15.7.2",
+    "react": "16",
+    "react-datepicker": "^2.9.6",
+    "react-dom": "16",
+    "react-leaflet": "^2.4.0",
+    "react-leaflet-draw": "^0.19.0",
+    "react-leaflet-enhanced-marker": "^1.0.11",
+    "react-leaflet-textpath": "^1.0.6",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.4",
+    "redux-observable": "^1.2.0",
+    "redux-saga": "^1.1.1",
+    "redux-thunk": "^2.3.0",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/types": "^7.6.1",
+    "autoprefixer": "^9.6.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "expect": "^24.9.0",
+    "file-loader": "^4.2.0",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.2.5",
+    "mini-css-extract-plugin": "^0.8.0",
+    "nock": "^11.3.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-prettier": "^1.1.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-bundle-analyzer": "^3.5.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2",
+    "worker-plugin": "^3.2.0"
+  }
+}
